@@ -1,2 +1,2 @@
-# cardLanding
+# Landing
 Landing about
