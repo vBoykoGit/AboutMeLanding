@@ -1,5 +1,4 @@
 import React from 'react';
-import './TimeLine.css'
 import TimeStampt from './TimeStamp';
 
 const TimeLine = (props) =>

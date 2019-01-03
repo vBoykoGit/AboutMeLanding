@@ -1,5 +1,4 @@
 import React from 'react';
-import './TimeStampt.css'
 
 const TimeStampt = (props) =>
     <section className='stamp'>

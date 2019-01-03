@@ -1,0 +1,25 @@
+.timeLineSection {
+    height: 100vh;
+    overflow-y: auto;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../timeLine.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.experience {
+    color: white;
+    font-size: 2.4rem;
+    font-weight: 600;
+    border-bottom: 5rem solid transparent;
+}
+
+.jobs {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-gap: 4rem;
+}

@@ -1,6 +1,5 @@
 import React from 'react';
 import photo from '../photo.jpg';
-import './About.css';
 
 const About = (props) =>
     <section className='aboutSection'>

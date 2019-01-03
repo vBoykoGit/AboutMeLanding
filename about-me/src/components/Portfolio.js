@@ -23,7 +23,7 @@ const Portfolio = () => {
     }
 
     return (
-        <div>
+        <div className='portfolio'>
             <AliceCarousel
                 items={state.items}
                 responsive={responsive}

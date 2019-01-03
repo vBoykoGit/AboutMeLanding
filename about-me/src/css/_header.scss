@@ -1,0 +1,41 @@
+.header {
+    background: black;
+    height: 100vh;
+    overflow-y: auto;
+    transition: background-color;
+    display: grid;
+    font-size: 90px;
+    font-weight: 900;
+    text-align: center;
+    color: white;
+    line-height: 80%;
+    align-content: center;
+}
+
+.header:hover {
+    animation: slide-up 0.4s ease;
+    background: white;
+    color: black;
+}
+
+.creative {
+    letter-spacing: 3vmax;
+}
+
+.frontend {
+    letter-spacing: 1.5vmax;
+}
+
+.developer {
+    letter-spacing: normal;
+}
+
+@keyframes slide-up {
+    0% {
+        opacity: 0;
+    }
+
+    100% {
+        opacity: 1;
+    }
+}
