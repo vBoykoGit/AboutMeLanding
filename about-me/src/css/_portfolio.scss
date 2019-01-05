@@ -1,4 +1,26 @@
+@import './project.scss';
+
 .portfolio {
-    background-color: black;
+    height: 100vh;
+    overflow-y: auto;
+    background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../projects.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
     color: white;
+}
+
+.portfolioTitle {
+    border-bottom: 2.5rem solid transparent;
+}
+
+.slider {
+    height: auto;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    max-width: 48rem;
 }
