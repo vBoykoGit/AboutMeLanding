@@ -4,6 +4,7 @@ import Header from './components/Header';
 import About from './components/About';
 import TimeLine from './components/TimeLine';
 import Portfolio from './components/Portfolio';
+import Footer from './components/Footer';
 
 class App extends Component {
   render() {
@@ -13,6 +14,7 @@ class App extends Component {
         <About />
         <TimeLine />
         <Portfolio />
+        <Footer />
       </div>
     );
   }

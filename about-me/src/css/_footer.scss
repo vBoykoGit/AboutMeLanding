@@ -1,0 +1,21 @@
+.footerSections {
+    height: 20vh;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.footerContent {
+    width: 15rem;
+}
+
+.footerSocial {
+    display: flex;
+}
+
+.rightMargin *:not(:last-child) {
+    margin-right: 1rem;
+}
