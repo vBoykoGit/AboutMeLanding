@@ -2,8 +2,6 @@
     margin-left: 0.5rem;
     margin-right: 0.5rem;
     width: 15rem;
-    // height: 15rem;
-
 }
 
 .projectInfo {
@@ -12,6 +10,8 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    position: relative;
+
 }
 
 .projectImage {

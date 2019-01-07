@@ -1,8 +1,6 @@
 .header {
-    background: black;
     height: 100vh;
     overflow-y: auto;
-    transition: background-color;
     display: grid;
     font-size: 90px;
     font-weight: 900;
@@ -10,12 +8,10 @@
     color: white;
     line-height: 80%;
     align-content: center;
-}
-
-.header:hover {
-    animation: slide-up 0.4s ease;
-    background: white;
-    color: black;
+    background: url('../headerBack.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: bottom center;
 }
 
 .creative {
@@ -28,14 +24,4 @@
 
 .developer {
     letter-spacing: normal;
-}
-
-@keyframes slide-up {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
 }

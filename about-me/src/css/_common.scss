@@ -4,11 +4,44 @@
     font-weight: 600;
 }
 
-.inlineIcon{
+.inlineIcon {
     height: 2rem;
 }
 
-.centered{
+.centered {
     display: flex;
     align-items: center;
+}
+
+.centeredColumn {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.arrow {
+    border: solid white;
+    border-width: 0 1rem 1rem 0;
+    display: inline-block;
+    padding: 0.5rem;
+    transform: rotate(-45deg);
+}
+
+.cover {
+    text-align: center;
+    font-size: 18px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    height: 100%;
+    width: 100%;
+    background: linear-gradient(rgba(0, 0, 0, .9), rgba(0, 0, 0, .9));
+    transform: translate(-50%, -50%);
+    opacity: 0;
+    transition: .5s ease;
+}
+
+.cover:hover {
+    opacity: 1;
 }
