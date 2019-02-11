@@ -7,28 +7,36 @@ import '/Users/admin/Git/AboutMeLanding/about-me/node_modules/slick-carousel/sli
 const ProjectsSlider = () => {
     var settings = {
         dots: true,
+        customPaging: i => (
+            <div className='dot'></div>
+        ),
         infinite: false,
         speed: 500,
-        slidesToShow: 4,
-        slidesToScroll: 4,
         initialSlide: 0,
         responsive: [
             {
-                breakpoint: 1024,
+                breakpoint: 1600,
+                settings: {
+                    slidesToShow: 4,
+                    slidesToScroll: 4,
+                }
+            },
+            {
+                breakpoint: 1250,
                 settings: {
                     slidesToShow: 3,
                     slidesToScroll: 3,
                 }
             },
             {
-                breakpoint: 600,
+                breakpoint: 1000,
                 settings: {
                     slidesToShow: 2,
                     slidesToScroll: 2,
                 }
             },
             {
-                breakpoint: 480,
+                breakpoint: 630,
                 settings: {
                     slidesToShow: 1,
                     slidesToScroll: 1
@@ -37,8 +45,7 @@ const ProjectsSlider = () => {
         ]
     };
     return (
-        <div>
-            <h2> Responsive </h2>
+        <div className='slider'>
             <Slider {...settings}>
                 {[{ title: 'Stolby', type: 'iOS App', source: { title: 'AppStore', link: 'https://itunes.apple.com/ru/app/stolby/id1033572573?mt=8' } },
                 { title: 'Tatysev', type: 'iOS App', source: { title: 'AppStore', link: 'https://itunes.apple.com/ru/app/tatysev/id1071384712?l=en&mt=8' } },
