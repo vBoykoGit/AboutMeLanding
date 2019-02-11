@@ -50,3 +50,9 @@
 .stamp:hover>.circle {
     transform: scale(1.5)
 }
+
+@media (max-width:$small) {
+    .stamp {
+        width: 20rem;
+    }
+}

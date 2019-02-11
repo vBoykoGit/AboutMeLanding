@@ -1,3 +1,5 @@
+@import './constants';
+
 .timeLineSection {
     height: 100vh;
     overflow-y: auto;
@@ -21,4 +23,18 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 4rem;
+}
+
+@media (max-width:$desktop) {
+    .timeLineSection {
+        height: auto;
+    }
+
+    .jobs {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        border-bottom: 4rem solid transparent;
+
+    }
 }
