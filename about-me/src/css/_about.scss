@@ -1,42 +1,89 @@
 .aboutSection {
     display: flex;
     flex-direction: row;
+    align-content: center;
     justify-content: center;
     align-items: center;
     background: black;
     height: 100vh;
-    overflow-y: auto;
+    overflow-x: hidden;
+    overflow-y: hidden;
 }
 
 .about {
-    height: 60vh;
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr auto;
-    grid-template-rows: 1fr 1fr;
+    grid-template-rows: 0.3fr 1fr;
     grid-column-gap: 2rem;
+    grid-row-gap: 2rem;
+    border: 3rem solid transparent;
 }
 
 .iam {
     color: white;
     font-size: 2.4rem;
     font-weight: 600;
-}
-
-.photo {
-    height: auto;
-    width: auto;
-    max-width: 450px;
     grid-row-start: 1;
-    grid-row-end: 4;
-    grid-column-start: 2;
 }
 
 .story {
+    height: auto;
+    width: auto;
     max-width: 700px;
     grid-column-start: 1;
     grid-column-end: 2;
     font-size: 1.2rem;
     text-align: left;
     color: white;
+}
+
+.photo {
+    height: auto;
+    max-width: 450px;
+    grid-row-start: 1;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    align-self: start;
+    justify-self: center;
+}
+
+@media (max-width:1040px) {
+    .aboutSection {
+        height: auto;
+    }
+
+    .photo {
+        max-width: 360px;
+    }
+}
+
+@media (max-width:800px) {
+    .about {
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr auto auto;
+    }
+
+    .aboutSection {
+        height: auto;
+    }
+
+    .photo {
+        grid-row-start: 5;
+        grid-column-start: 1;
+        max-width: 550px;
+    }
+}
+
+@media (max-width:600px) {
+
+    .photo {
+        width: 350px;
+    }
+}
+
+@media (max-width:400px) {
+    .photo {
+        width: 250px;
+    }
 }
