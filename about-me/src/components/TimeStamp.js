@@ -1,11 +1,11 @@
 import React from 'react';
 
-const TimeStampt = (props) =>
+const TimeStampt = ({ interval, title, description }) =>
     <section className='stamp'>
         <span className='circle'></span>
-        <div className='date'>2014-2015</div>
-        <div className='title'>iOS Developer in Anna.Money</div>
-        <div className='description'>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa.</div>
+        <div className='date'>{interval}</div>
+        <div className='title'>{title}</div>
+        <div className='description'>{description}</div>
     </section>
 
 export default TimeStampt

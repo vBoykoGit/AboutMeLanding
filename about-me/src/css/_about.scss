@@ -16,7 +16,7 @@
     display: grid;
     grid-auto-flow: row;
     grid-template-columns: 1fr auto;
-    grid-template-rows: 0.3fr 1fr;
+    grid-template-rows: 0.3fr auto 1fr;
     grid-column-gap: 2rem;
     grid-row-gap: 2rem;
     border: 3rem solid transparent;
@@ -27,6 +27,26 @@
     font-size: 2.4rem;
     font-weight: 600;
     grid-row-start: 1;
+}
+
+.skills {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    color: white;
+
+    &>*+* {
+        
+    }
+}
+
+.skill {
+    border: 1px solid white;
+    padding: 10px;
+    font-size: 0.8rem;
+    font-weight: 400;
+    margin-left: 15px;
+        margin-top: 15px;
 }
 
 .story {
@@ -60,14 +80,10 @@
     }
 }
 
-@media (max-width:$tablet) {
+@media (max-width:$bigTablet) {
     .about {
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr auto auto;
-    }
-
-    .aboutSection {
-        height: auto;
+        grid-template-rows: 1fr auto auto auto;
     }
 
     .photo {
@@ -80,12 +96,12 @@
 @media (max-width:$phone) {
 
     .photo {
-        width: 350px;
+        max-width: 350px;
     }
 }
 
 @media (max-width:$small) {
     .photo {
-        width: 250px;
+        max-width: 250px;
     }
 }

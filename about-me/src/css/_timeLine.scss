@@ -1,7 +1,8 @@
 @import './constants';
 
 .timeLineSection {
-    height: 100vh;
+    height: auto;
+    min-height: 100vh;
     overflow-y: auto;
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url('../timeLine.jpg');
     background-size: cover;
@@ -15,6 +16,7 @@
     color: white;
     font-size: 2.4rem;
     font-weight: 600;
+    border-top: 5rem solid transparent;
     border-bottom: 5rem solid transparent;
 }
 
@@ -23,6 +25,7 @@
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-gap: 4rem;
+    border-bottom: 5rem solid transparent;
 }
 
 @media (max-width:$desktop) {
