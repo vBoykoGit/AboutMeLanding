@@ -6,7 +6,8 @@ const Project = ({ title, type, source }) =>
         <div className='projectInfo'>
             <img className='projectImage' src={appStore} alt="" />
             <div className='projectType'>{type}</div>
-            <div className='cover centeredColumn' onClick={() => {window.open(source.link, '_blank') }}>
+            <div className='projectSource cover centeredColumn'
+                onClick={() => { window.open(source.link, '_blank') }}>
                 <p>To {source.title}</p>
                 <i className='arrow'></i>
             </div>
